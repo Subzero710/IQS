@@ -1,0 +1,30 @@
+{
+    "Laplacian_Sharpness": {
+        "min": 74.506295,
+        "max": 214.308687
+    },
+    "Sobel_Sharpness": {
+        "min": 28.17133725,
+        "max": 41.6113472
+    },
+    "Local_Gradient_Variance": {
+        "min": 1876.037055,
+        "max": 4203.716675
+    },
+    "FFT_Sharpness": {
+        "min": 6740.057928186249,
+        "max": 10863.31973170299
+    },
+    "Wavelet_Transform": {
+        "min": 0.0008357944915000017,
+        "max": 2.598187615
+    },
+    "DCT_Sharpness": {
+        "min": 1.318590995,
+        "max": 2.71027204
+    },
+    "IMG_Memory": {
+        "min": 69930.0,
+        "max": 91947.5
+    }
+}
