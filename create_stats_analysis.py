@@ -23,6 +23,7 @@ def process_image(image_path):
         fft_value = fft_sharpness(image)
         wavelet_value = wavelet_transform(image)
         dct_value = dct_sharpness(image)
+        file_size = os.path.getsize(image_path)
 
         return {
             "Image_Name": os.path.basename(image_path),
@@ -32,6 +33,7 @@ def process_image(image_path):
             "FFT_Sharpness": fft_value,
             "Wavelet_Transform": wavelet_value,
             "DCT_Sharpness": dct_value,
+            "IMG_Memory": file_size,
         }
     except Exception as e:
         return {
@@ -42,6 +44,7 @@ def process_image(image_path):
             "FFT_Sharpness": "Error",
             "Wavelet_Transform": "Error",
             "DCT_Sharpness": "Error",
+            "IMG_Memory": "Error",
             "BRISQUE": "Error"
         }
 
